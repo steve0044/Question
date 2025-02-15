@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengakuan Cinta 💖</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #ff4d6d;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 10px;
+        }
+        .yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+        .no {
+            background-color: #ccc;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Apakah kamu mau jadi pacarku? 💕</h1>
+        <button class="btn yes" onclick="loveAccepted()">Ya! 😍</button>
+        <button class="btn no" onclick="loveRejected()">Tidak 😢</button>
+        <p id="response"></p>
+    </div>
+
+    <script>
+        function loveAccepted() {
+            document.getElementById("response").innerHTML = "Yay! Aku sangat bahagia! 💖🥰";
+        }
+        function loveRejected() {
+            document.getElementById("response").innerHTML = "oke kalau begitu 😊💔";
+        }
+    </script>
+</body>
+</html>
